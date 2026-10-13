@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dany Ménard</title>
+<meta name="description" content="Mes outils et applications : assistance à distance, presets Fujifilm, Synchro et PointVirgule.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23185FA5'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='white'%3EDM%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f3f5fb; --text: #16213a; --muted: #55607a; --focus: #185fa5;
+    --hero-bg: #185fa5; --hero-text: #e6f1fb; --hero-sub: #b5d4f4;
+    --coral-bg: #faece7; --coral-text: #712b13; --coral-sub: #993c1d;
+    --teal-bg: #e1f5ee; --teal-text: #085041; --teal-sub: #0f6e56;
+    --purple-bg: #eeedfe; --purple-text: #3c3489; --purple-sub: #534ab7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11151d; --text: #e8ecf5; --muted: #9aa5bd; --focus: #85b7eb;
+      --hero-bg: #0c447c; --hero-text: #e6f1fb; --hero-sub: #b5d4f4;
+      --coral-bg: #4a1b0c; --coral-text: #faece7; --coral-sub: #f0997b;
+      --teal-bg: #04342c; --teal-text: #e1f5ee; --teal-sub: #5dcaa5;
+      --purple-bg: #26215c; --purple-text: #eeedfe; --purple-sub: #afa9ec;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text);
+    font: 17px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 40px; }
+  h1 { margin: 0; font-size: clamp(2rem, 6vw, 2.75rem); line-height: 1.1; letter-spacing: -.02em; }
+  .sub { margin: 8px 0 32px; color: var(--muted); }
+  .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .card { display: block; color: inherit; text-decoration: none; border-radius: 16px;
+    padding: 20px; transition: transform .15s ease; position: relative; }
+  .card:hover { transform: translateY(-3px); }
+  .card:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .card svg { width: 28px; height: 28px; display: block; margin-bottom: 14px;
+    fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .card h2 { margin: 0; font-size: 1.1rem; }
+  .card p { margin: 4px 0 0; font-size: .9rem; }
+  .card .go { position: absolute; top: 18px; right: 18px; width: 20px; height: 20px; margin: 0; opacity: .7; }
+  .hero { grid-column: 1 / -1; background: var(--hero-bg); color: var(--hero-text); padding: 26px 22px; }
+  .hero p { color: var(--hero-sub); }
+  .hero h2 { font-size: 1.35rem; }
+  .coral { background: var(--coral-bg); color: var(--coral-text); } .coral p { color: var(--coral-sub); }
+  .teal { background: var(--teal-bg); color: var(--teal-text); } .teal p { color: var(--teal-sub); }
+  .purple { background: var(--purple-bg); color: var(--purple-text); grid-column: 1 / -1; } .purple p { color: var(--purple-sub); }
+  footer { margin-top: 36px; text-align: center; font-size: .85rem; color: var(--muted); }
+  footer a { color: inherit; }
+  @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } .coral, .teal { grid-column: auto; } }
+  @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Dany Ménard</h1>
+  <p class="sub">Mes outils et applications</p>
+
+  <nav class="grid" aria-label="Mes applications">
+    <a class="card hero" href="https://mdany75.github.io/AssistanceDistance/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+      <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      <h2>Remote Groupe Couture</h2>
+      <p>Assistance à distance avec AnyDesk</p>
+    </a>
+    <a class="card coral" href="https://mdany75.github.io/presets-x-h2s/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+      <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      <h2>Presets X-H2S</h2>
+      <p>Banques C1–C7 et plus de 100 presets Fujifilm</p>
+    </a>
+    <a class="card teal" href="https://github.com/mdany75/Synchro">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14-4M4 13a8 8 0 0 0 14 4M4 4v4h4M20 20v-4h-4"/></svg>
+      <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      <h2>Synchro</h2>
+      <p>Miroir d'un SSD vers un NAS, sur macOS</p>
+    </a>
+    <a class="card purple" href="https://github.com/mdany75/PointVirgule">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h.01M11 10h.01M15 10h.01M7 14h10"/></svg>
+      <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      <h2>PointVirgule</h2>
+      <p>Inverse la touche décimale du pavé numérique, sur macOS</p>
+    </a>
+  </nav>
+
+  <footer><a href="https://github.com/mdany75">github.com/mdany75</a></footer>
+</main>
+</body>
+</html>
