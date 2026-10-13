@@ -2,7 +2,7 @@
 
 Page principale de Dany Ménard : boutons vers mes applications publiques.
 
-Publiée par GitHub Pages : https://mdany75.github.io/
+Publiée par GitHub Pages : https://911.groupecouture.ca/ (aussi https://mdany75.github.io/)
 
 ## Modifier
 
