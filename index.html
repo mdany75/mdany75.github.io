@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dany Ménard</title>
-<meta name="description" content="Mes outils et applications : assistance à distance, presets Fujifilm, Synchro, PointVirgule et AutoCorrection.">
+<meta name="description" content="Mes outils et applications : assistance à distance, presets Fujifilm, Synchro, PointVirgule, AutoCorrection et MyConfig.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23185FA5'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='15' font-weight='700' text-anchor='middle' fill='white'%3EDM%3C/text%3E%3C/svg%3E">
 <style>
   :root {
@@ -14,6 +14,7 @@
     --teal-bg: #e1f5ee; --teal-text: #085041; --teal-sub: #0f6e56;
     --purple-bg: #eeedfe; --purple-text: #3c3489; --purple-sub: #534ab7;
     --pink-bg: #fbeaf0; --pink-text: #72243e; --pink-sub: #993556;
+    --amber-bg: #faeeda; --amber-text: #633806; --amber-sub: #854f0b;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -23,6 +24,7 @@
       --teal-bg: #04342c; --teal-text: #e1f5ee; --teal-sub: #5dcaa5;
       --purple-bg: #26215c; --purple-text: #eeedfe; --purple-sub: #afa9ec;
       --pink-bg: #4b1528; --pink-text: #fbeaf0; --pink-sub: #ed93b1;
+      --amber-bg: #412402; --amber-text: #faeeda; --amber-sub: #ef9f27;
     }
   }
   * { box-sizing: border-box; }
@@ -48,6 +50,8 @@
   .teal { background: var(--teal-bg); color: var(--teal-text); } .teal p { color: var(--teal-sub); }
   .purple { background: var(--purple-bg); color: var(--purple-text); } .purple p { color: var(--purple-sub); }
   .pink { background: var(--pink-bg); color: var(--pink-text); } .pink p { color: var(--pink-sub); }
+  .amber { background: var(--amber-bg); color: var(--amber-text); } .amber p { color: var(--amber-sub); }
+  .wide { grid-column: 1 / -1; }
   footer { margin-top: 36px; text-align: center; font-size: .85rem; color: var(--muted); }
   footer a { color: inherit; }
   @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
@@ -89,6 +93,12 @@
       <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
       <h2>AutoCorrection</h2>
       <p>Corrige, rend professionnel ou réécrit en courriel le texte sélectionné, avec dictée, sur macOS</p>
+    </a>
+    <a class="card amber wide" href="https://github.com/mdany75/myconfig">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 12h3M11 12h9M4 17h11M19 17h1"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+      <svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+      <h2>MyConfig</h2>
+      <p>Mod Claude Code : une bande au-dessus du champ de saisie et un panneau de réglages à onglets</p>
     </a>
   </nav>
 
